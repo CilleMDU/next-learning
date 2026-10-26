@@ -1,12 +1,15 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>Welcome to Next.js!</h1>
-      </main>
-    </div>
+    <main>
+      <section className={styles.hero}>
+        <h1>Stories from Aarhus</h1>
+        <p>
+          City walks, food and places worth a visit. The content is written in
+          WordPress and presented with Next.js.
+        </p>
+      </section>
+    </main>
   );
 }
