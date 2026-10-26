@@ -1,6 +1,9 @@
 import styles from "./page.module.css";
 
 export default function Home() {
+
+  fetch(`${process.env.WORDPRESS_URL}/wp-json/wp/v2/posts`)
+  
   return (
     <main>
       <section className={styles.hero}>
