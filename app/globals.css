@@ -42,6 +42,15 @@ a {
   text-decoration: none;
 }
 
+.featured-image {
+  display: block;
+  width: 100%;
+  max-width: 42rem;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 0.75rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

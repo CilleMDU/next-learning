@@ -1,12 +1,13 @@
-export const metadata = {
-  title: "Posts",
-};
+import PostList from "@/components/PostList";
+import { getPosts } from "@/lib/wordpress";
 
-export default function PostsPage() {
+export default async function PostsPage() {
+  const posts = await getPosts();
+
   return (
     <main>
       <h1>Posts</h1>
-      <p>This is the posts page.</p>
+      <PostList posts={posts} />
     </main>
   );
 }
